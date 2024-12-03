@@ -1,8 +1,8 @@
-jQuery(function($) {
+jQuery(function ($) {
     'use strict';
 
     // Start Menu JS
-    $(window).on('scroll', function() {
+    $(window).on('scroll', function () {
         if ($(this).scrollTop() > 50) {
             $('.main-nav').addClass('menu-shrink');
         } else {
@@ -17,7 +17,7 @@ jQuery(function($) {
 
     // Search Box JS
     $('.search-toggle').addClass('closed');
-    $('.search-toggle .search-icon').on("click", function(e) {
+    $('.search-toggle .search-icon').on("click", function (e) {
         if ($('.search-toggle').hasClass('closed')) {
             $('.search-toggle').removeClass('closed').addClass('opened');
             $('.search-toggle, .search-area').addClass('opened');
@@ -29,8 +29,8 @@ jQuery(function($) {
     });
 
     // Sidebar Modal
-    $(document).ready(function() {
-        $(".modal a").not(".dropdown-toggle").on("click", function() {
+    $(document).ready(function () {
+        $(".modal a").not(".dropdown-toggle").on("click", function () {
             $(".modal").modal("hide");
         });
     });
@@ -62,9 +62,9 @@ jQuery(function($) {
     });
 
     // Odometer JS
-    $('.odometer').appear(function(e) {
+    $('.odometer').appear(function (e) {
         var odo = $(".odometer");
-        odo.each(function() {
+        odo.each(function () {
             var countNumber = $(this).attr("data-count");
             $(this).html(countNumber);
         });
@@ -155,7 +155,7 @@ jQuery(function($) {
 
     // Accordion JS
     $('.accordion > li:eq(0) a').addClass('active').next().slideDown();
-    $('.accordion a').on("click", function(j) {
+    $('.accordion a').on("click", function (j) {
         var dropDown = $(this).closest('li').find('p');
         $(this).closest('.accordion').find('p').not(dropDown).slideUp();
         if ($(this).hasClass('active')) {
@@ -178,7 +178,7 @@ jQuery(function($) {
         const day = hour * 24;
 
         let countDown = new Date('July 30, 2026 00:00:00').getTime();
-        setInterval(function() {
+        setInterval(function () {
             let now = new Date().getTime();
             let distance = countDown - now;
 
@@ -190,20 +190,20 @@ jQuery(function($) {
     };
 
     // Preloader JS
-    jQuery(window).on('load', function() {
+    jQuery(window).on('load', function () {
         jQuery(".loader").fadeOut(500);
     });
 
     // Back to Top JS 
     $('body').append('<div id="toTop" class="back-to-top-btn"><i class="bx bxs-up-arrow-alt"></i></div>');
-    $(window).scroll(function() {
+    $(window).scroll(function () {
         if ($(this).scrollTop() != 0) {
             $('#toTop').fadeIn();
         } else {
             $('#toTop').fadeOut();
         }
     });
-    $('#toTop').on('click', function() {
+    $('#toTop').on('click', function () {
         $("html, body").animate({
             scrollTop: 0
         }, 0);
@@ -232,7 +232,7 @@ function toggleTheme() {
     }
 }
 // Immediately invoked function to set the theme on initial load
-(function() {
+(function () {
     if (localStorage.getItem('robtic_theme') === 'theme-dark') {
         setTheme('theme-dark');
         document.getElementById('slider').checked = false;
@@ -241,3 +241,41 @@ function toggleTheme() {
         document.getElementById('slider').checked = true;
     }
 })();
+
+
+// offcanvas //
+$(document).ready(function () {
+    $(".Enquiryopen").click(function () {
+        let windowWidth = $(window).width();
+
+        // Adjust width based on screen size
+        if (windowWidth <= 600) {
+            $("#openCanvas").css("width", "95%");
+        } else if (windowWidth <= 992) {
+            $("#openCanvas").css("width", "60%");
+        } else {
+            $("#openCanvas").css("width", "40%");
+        }
+
+        // Show offcanvas and overlay
+        $("#openCanvas").css("visibility", "visible").addClass("show");
+        $(".content-overlay").fadeIn();
+    });
+
+    // Close offcanvas and hide overlay
+    $("#closeCanvas, .content-overlay").click(function () {
+        $("#openCanvas").css("visibility", "hidden").removeClass("show");
+        $(".content-overlay").fadeOut();
+    });
+
+    $(document).on('click', '#baricon', function () {
+        $("#mobile-menu").addClass("mobiledrop");
+        $("#baricon").addClass("remove-menu");
+    });
+
+    $(document).on('click', '#remove-menu', function () {
+        $("#mobile-menu").removeClass("mobiledrop");
+    });
+
+});
+// offcanvas //
