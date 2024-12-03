@@ -397,6 +397,12 @@ button:focus {
 .banner-img-one {
     background-image: url("../img/home-one/banner-main.jpg");
 }
+.banner-img-two {
+    background-image: url("../img/home-two/banner-main.jpg");
+}
+.banner-img-three {
+    background-image: url("../img/home-two/banner-main.jpg");
+}
 
 .banner-area {
     background-size: cover;
@@ -548,10 +554,6 @@ button:focus {
     text-transform: capitalize;
 }
 
-.about-area {
-    padding-top: 165px;
-    padding-bottom: 155px;
-}
 
 .about-area .section-title {
     text-align: left;
@@ -849,7 +851,8 @@ button:focus {
 
 .counter-area {
     background-color: #071320;
-    padding-bottom: 140px;
+    padding-bottom: 30px;
+    padding-top: 50px !important;
 }
 
 .counter-area .counter-text {
@@ -895,11 +898,11 @@ button:focus {
 .foreign-area {
     overflow: hidden;
     position: relative;
-    top: -70px;
+    top: 0px;
 }
 
 .foreign-area .foreign-slider {
-    left: calc((100% - 510px) / 2);
+    left: auto;
     position: relative;
 }
 
@@ -945,9 +948,8 @@ button:focus {
 
 .foreign-area .owl-theme .owl-nav {
     margin-top: 0;
-    position: absolute;
-    left: -115px;
-    top: 210px;
+    left: 50%;
+    top: 100%;
 }
 
 .foreign-item {
@@ -1086,17 +1088,18 @@ button:focus {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    margin-top: 170px;
+    margin-top: 50px;
 }
 
 .benefit-area .benefit-content {
     background-color: #02111e;
-    padding: 40px 170px 50px 60px;
+    padding: 40px 61px 50px 60px;
     max-width: 905px;
     margin-left: auto;
     position: relative;
-    top: 100px;
+    top: 70px;
 }
+
 
 .benefit-area .benefit-content .section-title {
     text-align: left;
@@ -1122,7 +1125,7 @@ button:focus {
     color: #fa5f0b;
     font-size: 45px;
     position: absolute;
-    top: -10px;
+    top: -22px;
     left: 0;
 }
 
@@ -1153,11 +1156,9 @@ button:focus {
     0% {
         transform: translate(0, 0);
     }
-
     50% {
         transform: translate(-50px, 0);
     }
-
     100% {
         transform: translate(0, 0);
     }
@@ -1212,11 +1213,9 @@ button:focus {
     0% {
         transform: translate(0, 0);
     }
-
     50% {
         transform: translate(50px, 0);
     }
-
     100% {
         transform: translate(0, 0);
     }
@@ -1560,10 +1559,6 @@ footer:before {
     background-image: url("../img/home-two/banner-bg.jpg");
 }
 
-.banner-img-two .banner-content {
-    text-align: left;
-    margin-left: 0;
-}
 
 .banner-img-two .banner-content h1 {
     font-weight: 700;
@@ -1584,11 +1579,9 @@ footer:before {
     0% {
         transform: translate(0, 0);
     }
-
     50% {
         transform: translate(-50px, 0);
     }
-
     100% {
         transform: translate(0, 0);
     }
@@ -1730,32 +1723,25 @@ footer:before {
 }
 
 @keyframes border-transform-default {
-
     0%,
     to {
         border-radius: 65% 86% 80% 69%/59% 55% 95% 89%;
     }
-
     14% {
         border-radius: 40% 60% 54% 46%/49% 60% 40% 51%;
     }
-
     28% {
         border-radius: 54% 46% 38% 62%/49% 70% 30% 51%;
     }
-
     42% {
         border-radius: 61% 39% 55% 45%/61% 38% 62% 39%;
     }
-
     56% {
         border-radius: 61% 39% 67% 33%/70% 50% 50% 30%;
     }
-
     70% {
         border-radius: 50% 50% 34% 66%/56% 68% 32% 44%;
     }
-
     84% {
         border-radius: 46% 54% 50% 50%/35% 61% 39% 65%;
     }
@@ -1822,32 +1808,25 @@ footer:before {
 }
 
 @keyframes about-ani {
-
     0%,
     to {
         border-radius: 63% 37% 54% 46%/55% 48% 52% 45%;
     }
-
     14% {
         border-radius: 40% 60% 54% 46%/49% 60% 40% 51%;
     }
-
     28% {
         border-radius: 54% 46% 38% 62%/49% 70% 30% 51%;
     }
-
     42% {
         border-radius: 61% 39% 55% 45%/61% 38% 62% 39%;
     }
-
     56% {
         border-radius: 61% 39% 67% 33%/70% 50% 50% 30%;
     }
-
     70% {
         border-radius: 50% 50% 34% 66%/56% 68% 32% 44%;
     }
-
     84% {
         border-radius: 46% 54% 50% 50%/35% 61% 39% 65%;
     }
@@ -4370,11 +4349,9 @@ footer:before {
     0% {
         transform: perspective(120px) rotateX(0deg) rotateY(0deg);
     }
-
     50% {
         transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
     }
-
     100% {
         transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
     }
