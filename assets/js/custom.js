@@ -268,14 +268,5 @@ $(document).ready(function () {
         $(".content-overlay").fadeOut();
     });
 
-    $(document).on('click', '#baricon', function () {
-        $("#mobile-menu").addClass("mobiledrop");
-        $("#baricon").addClass("remove-menu");
-    });
-
-    $(document).on('click', '#remove-menu', function () {
-        $("#mobile-menu").removeClass("mobiledrop");
-    });
-
 });
 // offcanvas //
