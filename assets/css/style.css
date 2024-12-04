@@ -2127,7 +2127,7 @@ footer:before {
     text-align: center;
     left: 0;
     right: 0;
-    top: 70px;
+    top: 0px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -4523,3 +4523,11 @@ footer:before {
     background-color: #218838;
   }
 /* offcanvas css */
+
+/* Aout Us PAge WHy Choose Us P */
+@media (max-width: 992px) {
+    .focusclass {
+        white-space: pre-wrap !important;
+    }
+}
+/* Aout Us PAge WHy Choose Us P */
