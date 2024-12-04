@@ -1,0 +1,213 @@
+/* start title css */
+.mens-wear-section-title {
+    text-align: center;
+    padding: 20px;
+}
+
+.mens-wear-section-title p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* start title css */
+
+.denim-section {
+    color: #333;
+}
+
+.denim-section h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.denim-section p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Product Card */
+.product-card {
+    background-color: #ffffff;
+    padding: 15px;
+    border: 1px solid #fa5f0b;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.product-card h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.product-card p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.enquiry-btn {
+    background-color: #fa5f0b;
+    color: #fff;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s ease;
+}
+
+.enquiry-btn:hover {
+    background-color: #d54b00;
+}
+
+/* Image Container */
+.image-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+/* Product Image */
+.product-image {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #ebf1fe;
+    border-radius: 8px;
+}
+
+/* Zoom Icon */
+.zoom-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 23px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 17px;
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    cursor: pointer;
+    height: 30%;
+    width: 23%;
+}
+
+/* Show zoom icon on image hover */
+.image-container:hover .zoom-icon {
+    opacity: 1;
+    z-index: 3;
+}
+
+/* Circle Hover Effect */
+.circle-hover figure {
+    position: relative;
+}
+
+.circle-hover figure::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    display: block;
+    content: '';
+    width: 0;
+    height: 0;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 100%;
+    /* Circular effect */
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all 0.75s ease;
+    /* Smooth transition */
+}
+
+.circle-hover figure:hover::before {
+    width: 200%;
+    height: 200%;
+    opacity: 1;
+    /* Expand the circle and show */
+}
+
+@keyframes circle {
+    0% {
+        opacity: 1;
+    }
+
+    40% {
+        opacity: 1;
+    }
+
+    100% {
+        width: 200%;
+        height: 200%;
+        opacity: 0;
+    }
+}
+
+/* Popup Modal */
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 10001;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    align-items: center;
+    justify-content: center;
+}
+
+.popup-content {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+    border: 4px solid #fff;
+    border-radius: 10px;
+    animation: zoomIn 0.3s;
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.7);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.close {
+    position: fixed;
+    top: 20px;
+    right: 30px;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.close:hover {
+    color: #f00;
+}
+
+
+.tabactive {
+    color: rgb(255, 255, 255) !important;
+    background-color: #fa5f0b;
+    padding: 8px 10px 8px 10px !important;
+}
+
