@@ -191,12 +191,12 @@ $(document).ready(function () {
     $("#Kids-Sweat-Shirts-Column").hide();
   });
 
-  $(document).on("click", "#Kids-Sweat-Shirts-Tab", function () {
-    $("#Kids-Dresses-Tab").removeClass("tabactive");
-    $("#Kids-T-Shirts-Tab").removeClass("tabactive");
-    $("#Kids-Athletic-Wear-Tab").removeClass("tabactive");
-    $("#Kids-Sports-Shirts-Tab").addClass("tabactive");
-    $("#Kids-Sweat-Shirts-Tab").removeClass("tabactive");
+  $(document).on('click', '#Kids-Sports-Shirts-Tab', function () {
+    $("#Kids-Dresses-Tab").removeClass('tabactive');
+    $("#Kids-T-Shirts-Tab").removeClass('tabactive');
+    $("#Kids-Athletic-Wear-Tab").removeClass('tabactive');
+    $("#Kids-Sports-Shirts-Tab").addClass('tabactive');
+    $("#Kids-Sweat-Shirts-Tab").removeClass('tabactive');
     $("#Kids-Dresses-Column").hide();
     $("#Kids-T-Shirts-Column").hide();
     $("#Kids-Athletic-Wear-Column").hide();
@@ -204,12 +204,12 @@ $(document).ready(function () {
     $("#Kids-Sweat-Shirts-Column").hide();
   });
 
-  $(document).on("click", "#Kids-Sports-Shirts-Tab", function () {
-    $("#Kids-Dresses-Tab").removeClass("tabactive");
-    $("#Kids-T-Shirts-Tab").removeClass("tabactive");
-    $("#Kids-Athletic-Wear-Tab").removeClass("tabactive");
-    $("#Kids-Sports-Shirts-Tab").removeClass("tabactive");
-    $("#Kids-Sweat-Shirts-Tab").addClass("tabactive");
+  $(document).on('click', '#Kids-Sweat-Shirts-Tab', function () {
+    $("#Kids-Dresses-Tab").removeClass('tabactive');
+    $("#Kids-T-Shirts-Tab").removeClass('tabactive');
+    $("#Kids-Athletic-Wear-Tab").removeClass('tabactive');
+    $("#Kids-Sports-Shirts-Tab").removeClass('tabactive');
+    $("#Kids-Sweat-Shirts-Tab").addClass('tabactive');
     $("#Kids-Dresses-Column").hide();
     $("#Kids-T-Shirts-Column").hide();
     $("#Kids-Athletic-Wear-Column").hide();
@@ -292,8 +292,150 @@ $(document).ready(function () {
   // Beach Wear //
 
   // Formal Wear //
+  $("#Formal-wear-T-Shirts-Column").hide();
+  $("#Formal-wear-Trousers-Column").hide();
+  $("#Formal-wear-Pants-Column").hide();
+  $("#Formal-wear-Shirts-Column").hide();
+  $("#Formal-wear-Dresses-Tab").addClass('tabactive');
 
+  $(document).on('click', '#Formal-wear-Dresses-Tab', function () {
+    $("#Formal-wear-Dresses-Tab").addClass('tabactive');
+    $("#Formal-wear-T-Shirts-Tab").removeClass('tabactive');
+    $("#Formal-wear-Trousers-Tab").removeClass('tabactive');
+    $("#Formal-wear-Pants-Tab").removeClass('tabactive');
+    $("#Formal-wear-Shirts-Tab").removeClass('tabactive');
+    $("#Formal-wear-Dresses-Column").show();
+    $("#Formal-wear-T-Shirts-Column").hide();
+    $("#Formal-wear-Trousers-Column").hide();
+    $("#Formal-wear-Pants-Column").hide();
+    $("#Formal-wear-Shirts-Column").hide();
+  });
+
+  $(document).on('click', '#Formal-wear-T-Shirts-Tab', function () {
+    $("#Formal-wear-Dresses-Tab").removeClass('tabactive');
+    $("#Formal-wear-T-Shirts-Tab").addClass('tabactive');
+    $("#Formal-wear-Trousers-Tab").removeClass('tabactive');
+    $("#Formal-wear-Pants-Tab").removeClass('tabactive');
+    $("#Formal-wear-Shirts-Tab").removeClass('tabactive');
+    $("#Formal-wear-Dresses-Column").hide();
+    $("#Formal-wear-T-Shirts-Column").show();
+    $("#Formal-wear-Trousers-Column").hide();
+    $("#Formal-wear-Pants-Column").hide();
+    $("#Formal-wear-Shirts-Column").hide();
+  });
+
+  $(document).on('click', '#Formal-wear-Trousers-Tab', function () {
+    $("#Formal-wear-Dresses-Tab").removeClass('tabactive');
+    $("#Formal-wear-T-Shirts-Tab").removeClass('tabactive');
+    $("#Formal-wear-Trousers-Tab").addClass('tabactive');
+    $("#Formal-wear-Pants-Tab").removeClass('tabactive');
+    $("#Formal-wear-Shirts-Tab").removeClass('tabactive');
+    $("#Formal-wear-Dresses-Column").hide();
+    $("#Formal-wear-T-Shirts-Column").hide();
+    $("#Formal-wear-Trousers-Column").show();
+    $("#Formal-wear-Pants-Column").hide();
+    $("#Formal-wear-Shirts-Column").hide();
+  });
+
+  $(document).on('click', '#Formal-wear-Pants-Tab', function () {
+    $("#Formal-wear-Dresses-Tab").removeClass('tabactive');
+    $("#Formal-wear-T-Shirts-Tab").removeClass('tabactive');
+    $("#Formal-wear-Trousers-Tab").removeClass('tabactive');
+    $("#Formal-wear-Pants-Tab").addClass('tabactive');
+    $("#Formal-wear-Shirts-Tab").removeClass('tabactive');
+    $("#Formal-wear-Dresses-Column").hide();
+    $("#Formal-wear-T-Shirts-Column").hide();
+    $("#Formal-wear-Trousers-Column").hide();
+    $("#Formal-wear-Pants-Column").show();
+    $("#Formal-wear-Shirts-Column").hide();
+  });
+
+  $(document).on('click', '#Formal-wear-Shirts-Tab', function () {
+    $("#Formal-wear-Dresses-Tab").removeClass('tabactive');
+    $("#Formal-wear-T-Shirts-Tab").removeClass('tabactive');
+    $("#Formal-wear-Trousers-Tab").removeClass('tabactive');
+    $("#Formal-wear-Pants-Tab").removeClass('tabactive');
+    $("#Formal-wear-Shirts-Tab").addClass('tabactive');
+    $("#Formal-wear-Dresses-Column").hide();
+    $("#Formal-wear-T-Shirts-Column").hide();
+    $("#Formal-wear-Trousers-Column").hide();
+    $("#Formal-wear-Pants-Column").hide();
+    $("#Formal-wear-Shirts-Column").show();
+  });
   // Formal Wear //
+
+  // Sleep Wear //
+  $("#Sleep-wear-Night-Shirts-Column").hide();
+  $("#Sleep-wear-Pajamas-Column").hide();
+  $("#Sleep-wear-Tank-Top-Column").hide();
+  $("#Sleep-wear-Panties-Column").hide();
+  $("#Sleep-wear-Nighty-Tab").addClass('tabactive');
+
+  $(document).on('click', '#Sleep-wear-Nighty-Tab', function () {
+    $("#Sleep-wear-Nighty-Tab").addClass('tabactive');
+    $("#Sleep-wear-Night-Shirts-Tab").removeClass('tabactive');
+    $("#Sleep-wear-Pajamas-Tab").removeClass('tabactive');
+    $("#Sleep-wear-Tank-Top-Tab").removeClass('tabactive');
+    $("#Sleep-wear-Panties-Tab").removeClass('tabactive');
+    $("#Sleep-wear-Nighty-Column").show();
+    $("#Sleep-wear-Night-Shirts-Column").hide();
+    $("#Sleep-wear-Pajamas-Column").hide();
+    $("#Sleep-wear-Tank-Top-Column").hide();
+    $("#Sleep-wear-Panties-Column").hide();
+  });
+
+  $(document).on('click', '#Sleep-wear-Night-Shirts-Tab', function () {
+    $("#Sleep-wear-Nighty-Tab").removeClass('tabactive');
+    $("#Sleep-wear-Night-Shirts-Tab").addClass('tabactive');
+    $("#Sleep-wear-Pajamas-Tab").removeClass('tabactive');
+    $("#Sleep-wear-Tank-Top-Tab").removeClass('tabactive');
+    $("#Sleep-wear-Panties-Tab").removeClass('tabactive');
+    $("#Sleep-wear-Nighty-Column").hide();
+    $("#Sleep-wear-Night-Shirts-Column").show();
+    $("#Sleep-wear-Pajamas-Column").hide();
+    $("#Sleep-wear-Tank-Top-Column").hide();
+    $("#Sleep-wear-Panties-Column").hide();
+  });
+
+  $(document).on('click', '#Sleep-wear-Pajamas-Tab', function () {
+    $("#Sleep-wear-Nighty-Tab").removeClass('tabactive');
+    $("#Sleep-wear-Night-Shirts-Tab").removeClass('tabactive');
+    $("#Sleep-wear-Pajamas-Tab").addClass('tabactive');
+    $("#Sleep-wear-Tank-Top-Tab").removeClass('tabactive');
+    $("#Sleep-wear-Panties-Tab").removeClass('tabactive');
+    $("#Sleep-wear-Nighty-Column").hide();
+    $("#Sleep-wear-Night-Shirts-Column").hide();
+    $("#Sleep-wear-Pajamas-Column").show();
+    $("#Sleep-wear-Tank-Top-Column").hide();
+    $("#Sleep-wear-Panties-Column").hide();
+  });
+
+  $(document).on('click', '#Sleep-wear-Tank-Top-Tab', function () {
+    $("#Sleep-wear-Nighty-Tab").removeClass('tabactive');
+    $("#Sleep-wear-Night-Shirts-Tab").removeClass('tabactive');
+    $("#Sleep-wear-Pajamas-Tab").removeClass('tabactive');
+    $("#Sleep-wear-Tank-Top-Tab").addClass('tabactive');
+    $("#Sleep-wear-Panties-Tab").removeClass('tabactive');
+    $("#Sleep-wear-Nighty-Column").hide();
+    $("#Sleep-wear-Night-Shirts-Column").hide();
+    $("#Sleep-wear-Pajamas-Column").hide();
+    $("#Sleep-wear-Tank-Top-Column").show();
+    $("#Sleep-wear-Panties-Column").hide();
+  });
+
+  $(document).on('click', '#Sleep-wear-Panties-Tab', function () {
+    $("#Sleep-wear-Nighty-Tab").removeClass('tabactive');
+    $("#Sleep-wear-Night-Shirts-Tab").removeClass('tabactive');
+    $("#Sleep-wear-Pajamas-Tab").removeClass('tabactive');
+    $("#Sleep-wear-Tank-Top-Tab").removeClass('tabactive');
+    $("#Sleep-wear-Panties-Tab").addClass('tabactive');
+    $("#Sleep-wear-Nighty-Column").hide();
+    $("#Sleep-wear-Night-Shirts-Column").hide();
+    $("#Sleep-wear-Pajamas-Column").hide();
+    $("#Sleep-wear-Tank-Top-Column").hide();
+    $("#Sleep-wear-Panties-Column").show();
+  });
+  // Sleep Wear //
 
   // Sport Wear //
   $("#SportWearPoloT-Shirts-Tab").addClass("tabactive");
