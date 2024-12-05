@@ -61,5 +61,11 @@ img {
     margin-left: 12%;
     margin-top: -5%;
     /* top: -11%; */
-    /* margin-right: auto;
+    margin-right: auto;
+}
+.job-area {
+   
+    background-size: cover !important;
+    background-position: center !important;
+    position: relative !important;
 }
