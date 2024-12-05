@@ -146,6 +146,155 @@ $(document).ready(function () {
     });
     // Ladies Wear //
 
+    // Kids Wear //
+    $("#Kids-T-Shirts-Column").hide();
+    $("#Kids-Athletic-Wear-Column").hide();
+    $("#Kids-Sports-Shirts-Column").hide();
+    $("#Kids-Sweat-Shirts-Column").hide();
+    $("#Kids-Dresses-Tab").addClass('tabactive');
+
+    $(document).on('click', '#Kids-Dresses-Tab', function () {
+        $("#Kids-Dresses-Tab").addClass('tabactive');
+        $("#Kids-T-Shirts-Tab").removeClass('tabactive');
+        $("#Kids-Athletic-Wear-Tab").removeClass('tabactive');
+        $("#Kids-Sports-Shirts-Tab").removeClass('tabactive');
+        $("#Kids-Sweat-Shirts-Tab").removeClass('tabactive');
+        $("#Kids-Dresses-Column").show();
+        $("#Kids-T-Shirts-Column").hide();
+        $("#Kids-Athletic-Wear-Column").hide();
+        $("#Kids-Sports-Shirts-Column").hide();
+        $("#Kids-Sweat-Shirts-Column").hide();
+    });
+
+    $(document).on('click', '#Kids-T-Shirts-Tab', function () {
+        $("#Kids-Dresses-Tab").removeClass('tabactive');
+        $("#Kids-T-Shirts-Tab").addClass('tabactive');
+        $("#Kids-Athletic-Wear-Tab").removeClass('tabactive');
+        $("#Kids-Sports-Shirts-Tab").removeClass('tabactive');
+        $("#Kids-Sweat-Shirts-Tab").removeClass('tabactive');
+        $("#Kids-Dresses-Column").hide();
+        $("#Kids-T-Shirts-Column").show();
+        $("#Kids-Athletic-Wear-Column").hide();
+        $("#Kids-Sports-Shirts-Column").hide();
+        $("#Kids-Sweat-Shirts-Column").hide();
+    });
+
+    $(document).on('click', '#Kids-Athletic-Wear-Tab', function () {
+        $("#Kids-Dresses-Tab").removeClass('tabactive');
+        $("#Kids-T-Shirts-Tab").removeClass('tabactive');
+        $("#Kids-Athletic-Wear-Tab").addClass('tabactive');
+        $("#Kids-Sports-Shirts-Tab").removeClass('tabactive');
+        $("#Kids-Sweat-Shirts-Tab").removeClass('tabactive');
+        $("#Kids-Dresses-Column").hide();
+        $("#Kids-T-Shirts-Column").hide();
+        $("#Kids-Athletic-Wear-Column").show();
+        $("#Kids-Sports-Shirts-Column").hide();
+        $("#Kids-Sweat-Shirts-Column").hide();
+    });
+
+    $(document).on('click', '#Kids-Sweat-Shirts-Tab', function () {
+        $("#Kids-Dresses-Tab").removeClass('tabactive');
+        $("#Kids-T-Shirts-Tab").removeClass('tabactive');
+        $("#Kids-Athletic-Wear-Tab").removeClass('tabactive');
+        $("#Kids-Sports-Shirts-Tab").addClass('tabactive');
+        $("#Kids-Sweat-Shirts-Tab").removeClass('tabactive');
+        $("#Kids-Dresses-Column").hide();
+        $("#Kids-T-Shirts-Column").hide();
+        $("#Kids-Athletic-Wear-Column").hide();
+        $("#Kids-Sports-Shirts-Column").show();
+        $("#Kids-Sweat-Shirts-Column").hide();
+    });
+
+    $(document).on('click', '#Kids-Sports-Shirts-Tab', function () {
+        $("#Kids-Dresses-Tab").removeClass('tabactive');
+        $("#Kids-T-Shirts-Tab").removeClass('tabactive');
+        $("#Kids-Athletic-Wear-Tab").removeClass('tabactive');
+        $("#Kids-Sports-Shirts-Tab").removeClass('tabactive');
+        $("#Kids-Sweat-Shirts-Tab").addClass('tabactive');
+        $("#Kids-Dresses-Column").hide();
+        $("#Kids-T-Shirts-Column").hide();
+        $("#Kids-Athletic-Wear-Column").hide();
+        $("#Kids-Sports-Shirts-Column").hide();
+        $("#Kids-Sweat-Shirts-Column").show();
+    });
+    // Kids Wear //
+
+    // Beach Wear //
+    $("#Beach-wear-Vests-Column").hide();
+    $("#Beach-wear-Fashion-Tops-Column").hide();
+    $("#Beach-wear-Bermuda-Column").hide();
+    $("#Beach-wear-Shorts-Column").hide();
+    $("#Beach-wear-Swim-Suits-Tab").addClass('tabactive');
+
+    $(document).on('click', '#Beach-wear-Swim-Suits-Tab', function () {
+        $("#Beach-wear-Swim-Suits-Tab").addClass('tabactive');
+        $("#Beach-wear-Vests-Tab").removeClass('tabactive');
+        $("#Beach-wear-Fashion-Tops-Tab").removeClass('tabactive');
+        $("#Beach-wear-Bermuda-Tab").removeClass('tabactive');
+        $("#Beach-wear-Shorts-Tab").removeClass('tabactive');
+        $("#Beach-wear-Swim-Suits-Column").show();
+        $("#Beach-wear-Vests-Column").hide();
+        $("#Beach-wear-Fashion-Tops-Column").hide();
+        $("#Beach-wear-Bermuda-Column").hide();
+        $("#Beach-wear-Shorts-Column").hide();
+    });
+
+    $(document).on('click', '#Beach-wear-Vests-Tab', function () {
+        $("#Beach-wear-Swim-Suits-Tab").removeClass('tabactive');
+        $("#Beach-wear-Vests-Tab").addClass('tabactive');
+        $("#Beach-wear-Fashion-Tops-Tab").removeClass('tabactive');
+        $("#Beach-wear-Bermuda-Tab").removeClass('tabactive');
+        $("#Beach-wear-Shorts-Tab").removeClass('tabactive');
+        $("#Beach-wear-Swim-Suits-Column").hide();
+        $("#Beach-wear-Vests-Column").show();
+        $("#Beach-wear-Fashion-Tops-Column").hide();
+        $("#Beach-wear-Bermuda-Column").hide();
+        $("#Beach-wear-Shorts-Column").hide();
+    });
+
+    $(document).on('click', '#Beach-wear-Fashion-Tops-Tab', function () {
+        $("#Beach-wear-Swim-Suits-Tab").removeClass('tabactive');
+        $("#Beach-wear-Vests-Tab").removeClass('tabactive');
+        $("#Beach-wear-Fashion-Tops-Tab").addClass('tabactive');
+        $("#Beach-wear-Bermuda-Tab").removeClass('tabactive');
+        $("#Beach-wear-Shorts-Tab").removeClass('tabactive');
+        $("#Beach-wear-Swim-Suits-Column").hide();
+        $("#Beach-wear-Vests-Column").hide();
+        $("#Beach-wear-Fashion-Tops-Column").show();
+        $("#Beach-wear-Bermuda-Column").hide();
+        $("#Beach-wear-Shorts-Column").hide();
+    });
+
+    $(document).on('click', '#Beach-wear-Bermuda-Tab', function () {
+        $("#Beach-wear-Swim-Suits-Tab").removeClass('tabactive');
+        $("#Beach-wear-Vests-Tab").removeClass('tabactive');
+        $("#Beach-wear-Fashion-Tops-Tab").removeClass('tabactive');
+        $("#Beach-wear-Bermuda-Tab").addClass('tabactive');
+        $("#Beach-wear-Shorts-Tab").removeClass('tabactive');
+        $("#Beach-wear-Swim-Suits-Column").hide();
+        $("#Beach-wear-Vests-Column").hide();
+        $("#Beach-wear-Fashion-Tops-Column").hide();
+        $("#Beach-wear-Bermuda-Column").show();
+        $("#Beach-wear-Shorts-Column").hide();
+    });
+
+    $(document).on('click', '#Beach-wear-Shorts-Tab', function () {
+        $("#Beach-wear-Swim-Suits-Tab").removeClass('tabactive');
+        $("#Beach-wear-Vests-Tab").removeClass('tabactive');
+        $("#Beach-wear-Fashion-Tops-Tab").removeClass('tabactive');
+        $("#Beach-wear-Bermuda-Tab").removeClass('tabactive');
+        $("#Beach-wear-Shorts-Tab").addClass('tabactive');
+        $("#Beach-wear-Swim-Suits-Column").hide();
+        $("#Beach-wear-Vests-Column").hide();
+        $("#Beach-wear-Fashion-Tops-Column").hide();
+        $("#Beach-wear-Bermuda-Column").hide();
+        $("#Beach-wear-Shorts-Column").show();
+    });
+    // Beach Wear //
+
+    // Formal Wear //
+
+    // Formal Wear //
 
 
 });
