@@ -91,3 +91,7 @@ max-width: 695px;
         line-height: 1.8 !important;
     }
 }
+.service-details-area .service-details-item .service-details-cat img {
+    margin-top: 18px !important;
+}
+
