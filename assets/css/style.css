@@ -395,20 +395,20 @@ button:focus {
 /*-- Banner --*/
 
 .banner-img-one {
-    background-image: url("../img/home-one/banner-main.jpg");
+    background-image: url("../img/home-one/bg-1.png");
 }
-.banner-img-two {
-    background-image: url("../img/home-two/banner-main.jpg");
+/* .banner-img-two {
+    background-image: url("../img/home-one/bg-1.png");
 }
 .banner-img-three {
-    background-image: url("../img/home-two/banner-main.jpg");
-}
+    background-image: url("../img/home-one/bg-1.png");
+} */
 
 .banner-area {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    height: 900px;
+    height: 540px;
     position: relative;
     z-index: 1;
 }
