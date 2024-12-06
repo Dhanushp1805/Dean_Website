@@ -798,8 +798,8 @@ $(document).ready(function () {
     }
     $("html, body").animate({ scrollTop: 530 }, 100);
   } else if (filename === "/sleep-wear-Undergarments.html") {
-    $("#Formal-wear-Dresses-Tab").addClass("tabactive");
-    $("#Formal-wear-Dresses-Column").show();
+    $("#Sleep-wear-Nighty-Tab").addClass("tabactive");
+    $("#Sleep-wear-Nighty-Column").show();
     $("html, body").animate({ scrollTop: 0 }, 100);
   }
   // Sleep Wear / Undergarments //
@@ -825,8 +825,8 @@ $(document).ready(function () {
 
     $("html, body").animate({ scrollTop: 530 }, 100);
   } else if (filename === "/sport-wear.html") {
-    $("#Formal-wear-Dresses-Tab").addClass("tabactive");
-    $("#Formal-wear-Dresses-Column").show();
+    $("#SportWearPoloT-Shirts-Tab").addClass("tabactive");
+    $("#SportWearPoloT-Shirts-Column").show();
     $("html, body").animate({ scrollTop: 0 }, 100);
   }
   // Sport Wear //
