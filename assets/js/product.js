@@ -642,6 +642,7 @@ $(document).ready(function () {
     var text = $(this).text();
     localStorage.setItem("linkText", text);
   });
+
   var savedText = localStorage.getItem("linkText");
   var filename = window.location.pathname;
 
@@ -735,19 +736,155 @@ $(document).ready(function () {
     } else if (savedText === "Bermuda") {
       $("#Beach-wear-Bermuda-Tab").addClass("tabactive");
       $("#Beach-wear-Bermuda-Column").show();
-    }else if(savedText === "Shorts"){
+    } else if (savedText === "Shorts") {
       $("#Beach-wear-Shorts-Tab").addClass("tabactive");
       $("#Beach-wear-Shorts-Column").show();
     }
     $("html, body").animate({ scrollTop: 530 }, 100);
   } else if (filename === "/beach-wear.html") {
     $("#Beach-wear-Swim-Suits-Tab").addClass("tabactive");
-      $("#Beach-wear-Swim-Suits-Column").show();
+    $("#Beach-wear-Swim-Suits-Column").show();
     $("html, body").animate({ scrollTop: 0 }, 100);
   }
   // Beach Wear //
-});
 
+  // Formal Wear //
+  if (filename === "/formal-wear.html" && savedText != "Formal Wear") {
+    if (savedText === "Dresses") {
+      $("#Formal-wear-Dresses-Tab").addClass("tabactive");
+      $("#Formal-wear-Dresses-Column").show();
+    } else if (savedText === "T-Shirts") {
+      $("#Formal-wear-T-Shirts-Tab").addClass("tabactive");
+      $("#Formal-wear-T-Shirts-Column").show();
+    } else if (savedText === "Trousers") {
+      $("#Formal-wear-Trousers-Tab").addClass("tabactive");
+      $("#Formal-wear-Trousers-Column").show();
+    } else if (savedText === "Pants") {
+      $("#Formal-wear-Pants-Tab").addClass("tabactive");
+      $("#Formal-wear-Pants-Column").show();
+    } else if (savedText === "Shirts") {
+      $("#Formal-wear-Shirts-Tab").addClass("tabactive");
+      $("#Formal-wear-Shirts-Column").show();
+    }
+
+    $("html, body").animate({ scrollTop: 530 }, 100);
+  } else if (filename === "/formal-wear.html") {
+    $("#Formal-wear-Dresses-Tab").addClass("tabactive");
+    $("#Formal-wear-Dresses-Column").show();
+    $("html, body").animate({ scrollTop: 0 }, 100);
+  }
+  // Formal Wear //
+
+  // Sleep Wear / Undergarments //
+  if (
+    filename === "/sleep-wear-Undergarments.html" &&
+    savedText != "Sleep Wear / Undergarments"
+  ) {
+    if (savedText === "Nighty") {
+      $("#Sleep-wear-Nighty-Tab").addClass("tabactive");
+      $("#Sleep-wear-Nighty-Column").show();
+    } else if (savedText === "Night Shirts") {
+      $("#Sleep-wear-Night-Shirts-Tab").addClass("tabactive");
+      $("#Sleep-wear-Night-Shirts-Column").show();
+    } else if (savedText === "Pajamas") {
+      $("#Sleep-wear-Pajamas-Tab").addClass("tabactive");
+      $("#Sleep-wear-Pajamas-Column").show();
+    } else if (savedText === "Tank Top") {
+      $("#Sleep-wear-Tank-Top-Tab").addClass("tabactive");
+      $("#Sleep-wear-Tank-Top-Column").show();
+    } else if (savedText === "Panties") {
+      $("#Sleep-wear-Panties-Tab").addClass("tabactive");
+      $("#Sleep-wear-Panties-Column").show();
+    }
+    $("html, body").animate({ scrollTop: 530 }, 100);
+  } else if (filename === "/sleep-wear-Undergarments.html") {
+    $("#Formal-wear-Dresses-Tab").addClass("tabactive");
+    $("#Formal-wear-Dresses-Column").show();
+    $("html, body").animate({ scrollTop: 0 }, 100);
+  }
+  // Sleep Wear / Undergarments //
+
+  // Sport Wear //
+  if (filename === "/sport-wear.html" && savedText != "Sport Wear") {
+    if (savedText === "Polo T-Shirts") {
+      $("#SportWearPoloT-Shirts-Tab").addClass("tabactive");
+      $("#SportWearPoloT-Shirts-Column").show();
+    } else if (savedText === "Athletic Wear") {
+      $("#SportWearAthleticWear-Tab").addClass("tabactive");
+      $("#SportWearAthleticWear-Column").show();
+    } else if (savedText === "Sports Shirts") {
+      $("#SportWearSportsShirts-Tab").addClass("tabactive");
+      $("#SportWearSportsShirts-Column").show();
+    } else if (savedText === "Track Suit") {
+      $("#SportWearTracksuit-Tab").addClass("tabactive");
+      $("#SportWearTrackSuit-Column").show();
+    } else if (savedText === "Jog Suits") {
+      $("#SportWearJogSuits-Tab").addClass("tabactive");
+      $("#SportWearJogSuits-Column").show();
+    }
+
+    $("html, body").animate({ scrollTop: 530 }, 100);
+  } else if (filename === "/sport-wear.html") {
+    $("#Formal-wear-Dresses-Tab").addClass("tabactive");
+    $("#Formal-wear-Dresses-Column").show();
+    $("html, body").animate({ scrollTop: 0 }, 100);
+  }
+  // Sport Wear //
+
+  // Knitwear //
+  if (filename === "/knitwear.html" && savedText != "Knitwear") {
+    if (savedText === "Polo T-Shirts") {
+      $("#KnitwearPoloT-Shirts-Tab").addClass("tabactive");
+      $("#KnitwearPoloT-Shirts-Column").show();
+    } else if (savedText === "T-Shirts") {
+      $("#KnitwearKnitwearT-Shirts-Tab").addClass("tabactive");
+      $("#KnitwearKnitwearT-Shirts-Column").show();
+    } else if (savedText === "T-Shirts") {
+      $("#KnitwearKnitwearT-Shirts-Tab").addClass("tabactive");
+      $("#KnitwearKnitwearT-Shirts-Column").show();
+    } else if (savedText === "Pullovers") {
+      $("#KnitwearPullovers-Tab").addClass("tabactive");
+      $("#KnitwearPullovers-Column").show();
+    } else if (savedText === "Sweaters") {
+      $("#KnitwearSweaters-Tab").addClass("tabactive");
+      $("#KnitwearSweaters-Column").show();
+    } else if (savedText === "Sweat Shirts") {
+      $("#KnitwearSweatShirts-Tab").addClass("tabactive");
+      $("#KnitwearSweatShirts-Column").show();
+    }
+
+    $("html, body").animate({ scrollTop: 530 }, 100);
+  } else if (filename === "/knitwear.html") {
+    $("#KnitwearPoloT-Shirts-Tab").addClass("tabactive");
+    $("#KnitwearPoloT-Shirts-Column").show();
+    $("html, body").animate({ scrollTop: 0 }, 100);
+  }
+  // Knitwear //
+
+  // Home Furnishings //
+  if (
+    filename === "/home-furnishings.html" &&
+    savedText != "Home Furnishings"
+  ) {
+    if (savedText === "Bed & Bedding Furnishings") {
+      $("#HomeFurnishingsBeddingFurnishings-Tab").addClass("tabactive");
+      $("#HomeFurnishingsBeddingFurnishings-Column").show();
+    } else if (savedText === "Bathroom Furnishings") {
+      $("#HomeFurnishingsBathroomFurnishings-Tab").addClass("tabactive");
+      $("#HomeFurnishingsBathroomFurnishings-Column").show();
+    } else if (savedText === "Kitchen Linen") {
+      $("#HomeFurnishingsKitchenLinen-Tab").addClass("tabactive");
+      $("#HomeFurnishingsKitchenLinen-Column").show();
+    }
+
+    $("html, body").animate({ scrollTop: 530 }, 100);
+  } else if (filename === "/home-furnishings.html") {
+    $("#HomeFurnishingsBeddingFurnishings-Tab").addClass("tabactive");
+    $("#HomeFurnishingsBeddingFurnishings-Column").show();
+    $("html, body").animate({ scrollTop: 0 }, 100);
+  }
+  // Home Furnishings //
+});
 
 // popup function //
 function showPopup(imageSrc) {
