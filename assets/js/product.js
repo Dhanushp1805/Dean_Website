@@ -884,6 +884,19 @@ $(document).ready(function () {
     $("html, body").animate({ scrollTop: 0 }, 100);
   }
   // Home Furnishings //
+
+  // Home LocalStorage //
+  $(".homeLocalStorage").click(function () {
+    var text = $(this).text();
+    localStorage.setItem("linkText", text);
+  });
+
+  $(".cmn-btn").click(function () {
+    var text = $(this).closest('.foreign-bottom').find('.homeLocalStorage').text();
+    localStorage.setItem("linkText", text);
+  });
+
+  // Home LocalStorage //
 });
 
 // popup function //
