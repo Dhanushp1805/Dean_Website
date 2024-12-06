@@ -892,10 +892,18 @@
     </div>
     <!-- End Project Details -->
 
-    <!-- Popup Modal -->
+ <!-- Popup Modal -->
     <div id="imagePopup" class="popup">
-        <span class="close" onclick="closePopup()">&times;</span>
-        <img id="popupImage" class="popup-content">
+        <div class="popup-container">
+            <!-- Popup Header -->
+            <div class="popup-header">
+                <button class="close" onclick="closePopup()">&times;</button>
+            </div>
+            <!-- Popup Content -->
+            <div class="popup-content">
+                <img id="popupImage" alt="Popup Image">
+            </div>
+        </div>
     </div>
 
     <!-- Footer -->
