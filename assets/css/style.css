@@ -393,22 +393,29 @@ button:focus {
 /*-- End Navbar --*/
 
 /*-- Banner --*/
+.carousel {
+    position: relative;
+    top: 90px;
+    margin-bottom: 75px;
+}
 
 .banner-img-one {
     background-image: url("../img/home-one/bg-1.png");
 }
-/* .banner-img-two {
+
+.banner-img-two {
     background-image: url("../img/home-one/bg-1.png");
 }
+
 .banner-img-three {
     background-image: url("../img/home-one/bg-1.png");
-} */
+}
 
 .banner-area {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    height: 540px;
+    height: 475px;
     position: relative;
     z-index: 1;
 }
@@ -1156,9 +1163,11 @@ button:focus {
     0% {
         transform: translate(0, 0);
     }
+
     50% {
         transform: translate(-50px, 0);
     }
+
     100% {
         transform: translate(0, 0);
     }
@@ -1213,9 +1222,11 @@ button:focus {
     0% {
         transform: translate(0, 0);
     }
+
     50% {
         transform: translate(50px, 0);
     }
+
     100% {
         transform: translate(0, 0);
     }
@@ -1555,11 +1566,6 @@ footer:before {
 
 /*-- Banner --*/
 
-.banner-img-two {
-    background-image: url("../img/home-two/banner-bg.jpg");
-}
-
-
 .banner-img-two .banner-content h1 {
     font-weight: 700;
 }
@@ -1579,9 +1585,11 @@ footer:before {
     0% {
         transform: translate(0, 0);
     }
+
     50% {
         transform: translate(-50px, 0);
     }
+
     100% {
         transform: translate(0, 0);
     }
@@ -1723,25 +1731,32 @@ footer:before {
 }
 
 @keyframes border-transform-default {
+
     0%,
     to {
         border-radius: 65% 86% 80% 69%/59% 55% 95% 89%;
     }
+
     14% {
         border-radius: 40% 60% 54% 46%/49% 60% 40% 51%;
     }
+
     28% {
         border-radius: 54% 46% 38% 62%/49% 70% 30% 51%;
     }
+
     42% {
         border-radius: 61% 39% 55% 45%/61% 38% 62% 39%;
     }
+
     56% {
         border-radius: 61% 39% 67% 33%/70% 50% 50% 30%;
     }
+
     70% {
         border-radius: 50% 50% 34% 66%/56% 68% 32% 44%;
     }
+
     84% {
         border-radius: 46% 54% 50% 50%/35% 61% 39% 65%;
     }
@@ -1808,25 +1823,32 @@ footer:before {
 }
 
 @keyframes about-ani {
+
     0%,
     to {
         border-radius: 63% 37% 54% 46%/55% 48% 52% 45%;
     }
+
     14% {
         border-radius: 40% 60% 54% 46%/49% 60% 40% 51%;
     }
+
     28% {
         border-radius: 54% 46% 38% 62%/49% 70% 30% 51%;
     }
+
     42% {
         border-radius: 61% 39% 55% 45%/61% 38% 62% 39%;
     }
+
     56% {
         border-radius: 61% 39% 67% 33%/70% 50% 50% 30%;
     }
+
     70% {
         border-radius: 50% 50% 34% 66%/56% 68% 32% 44%;
     }
+
     84% {
         border-radius: 46% 54% 50% 50%/35% 61% 39% 65%;
     }
@@ -2683,10 +2705,6 @@ footer:before {
 /*-- End Navbar --*/
 
 /*-- Banner --*/
-
-.banner-img-three {
-    background-image: url("../img/home-three/banner-bg.jpg");
-}
 
 .banner-img-three .cmn-btn {
     color: #ffffff;
@@ -4349,9 +4367,11 @@ footer:before {
     0% {
         transform: perspective(120px) rotateX(0deg) rotateY(0deg);
     }
+
     50% {
         transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
     }
+
     100% {
         transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
     }
@@ -4489,39 +4509,98 @@ footer:before {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
-    z-index: 1040; /* Below the offcanvas */
-  }
-  .offcanvas {
+    z-index: 1040;
+    overflow: hidden !important;
+    /* Below the offcanvas */   
+}
+
+.offcanvas {
     border-radius: 10px 0 0 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  }
-  .offcanvas-header {
-    background-color: #007bff;
+}
+
+.offcanvas-header {
+    background-color: #fa5f0b;
     color: #fff;
-    border-bottom: 2px solid #0056b3;
-  }
-  .offcanvas-body {
-    padding: 20px;
-  }
-  .form-control {
-    border-radius: 5px;
-  }
-  .btn-primary {
+    border-bottom: 2px solid #db4e02;
+}
+
+.offcanvas-body {
+    padding: 15px;
+}
+
+.offcanvas-body .form-group {
+    margin-bottom: 15px;
+}
+
+.offcanvas-body .form-group .form-control {
+    border: 1px solid #fa5f0b;
+    border-radius: 0;
+    height: 40px;
+    padding-left: 25px;
+    font-size: 14px;
+}
+
+.offcanvas-body .form-group .form-control:focus {
+    box-shadow: none;
+    border: 1px solid #282828;
+}
+
+.offcanvas-body .form-group textarea {
+    height: auto !important;
+    padding-top: 15px;
+}
+
+.offcanvas-body .form-group ::-moz-placeholder {
+    color: #282828;
+}
+
+.offcanvas-body .form-group ::placeholder {
+    color: #282828;
+}
+
+.offcanvas-body .form-group .list-unstyled {
+    color: #dc3545;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.offcanvas-body .btn-success {
+    background-color: #fa5f0b;
+    color: #ffffff;
+    width: 100%;
+    border-radius: 0;
+    padding: 12px 0;
+    text-transform: uppercase;
+    transition: 0.5s all ease;
+    opacity: 1;
+    font-weight: 600;
+}
+
+.offcanvas-body .btn-success:hover {
+    background-color: #282828;
+}
+
+.btn-primary {
     background-color: #007bff;
     border: none;
     border-radius: 5px;
-  }
-  .btn-primary:hover {
+}
+
+.btn-primary:hover {
     background-color: #0056b3;
-  }
-  .btn-success {
+}
+
+.btn-success {
     background-color: #28a745;
     border: none;
     border-radius: 5px;
-  }
-  .btn-success:hover {
+}
+
+.btn-success:hover {
     background-color: #218838;
-  }
+}
+
 /* offcanvas css */
 
 /* Aout Us PAge WHy Choose Us P */
@@ -4530,8 +4609,5 @@ footer:before {
         white-space: pre-wrap !important;
     }
 }
+
 /* Aout Us PAge WHy Choose Us P */
-
-
-
-

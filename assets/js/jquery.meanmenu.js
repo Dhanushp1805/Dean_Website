@@ -143,7 +143,7 @@
                                 A = !0;
 
                                 jQuery("#mobile-menu").css({
-                                    "height": "270px",
+                                    "height": "342px",
                                     "overflow-y": "auto",
                                     "overflow-x": "hidden"
                                 });

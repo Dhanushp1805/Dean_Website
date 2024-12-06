@@ -95,12 +95,13 @@
     }
 
     .banner-area .banner-content h1 {
-        font-size: 27px;
+        font-size: 20px;
         margin-bottom: 20px;
     }
 
     .banner-area .banner-content p {
-        font-size: 17px;
+        font-size: 13px;
+        font-weight: 400;
     }
 
     .cmn-btn {
@@ -676,9 +677,6 @@
 
     /*-- End Navbar --*/
     /*-- Banner --*/
-    .banner-img-three {
-        padding-bottom: 140px;
-    }
 
     /*-- End Banner --*/
     /*-- Benefit --*/
@@ -2009,6 +2007,16 @@
     .main-nav nav .navbar-nav .nav-item .samlldrop {
         left: -440%;
         width: 970px;
+    }
+}
+
+@media (max-width: 992px) {
+    .project-details-click {
+        display: none;
+    }
+
+    .carousel {
+        top: 55px;
     }
 }
 
