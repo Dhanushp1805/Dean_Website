@@ -123,8 +123,8 @@
     }
 
     .about-area {
-        padding-top: 50px;
-        padding-bottom: 50px;
+        padding-top: 30px;
+        padding-bottom: 30px;
     }
 
     .about-area .about-content {
@@ -208,8 +208,8 @@
     /*-- Foreign --*/
     .foreign-area {
         top: 0;
-        padding-top: 50px;
-        padding-bottom: 50px;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
 
     .foreign-area .foreign-slider {
