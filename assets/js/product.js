@@ -839,9 +839,9 @@ $(document).ready(function () {
     } else if (savedText === "T-Shirts") {
       $("#KnitwearKnitwearT-Shirts-Tab").addClass("tabactive");
       $("#KnitwearKnitwearT-Shirts-Column").show();
-    } else if (savedText === "T-Shirts") {
-      $("#KnitwearKnitwearT-Shirts-Tab").addClass("tabactive");
-      $("#KnitwearKnitwearT-Shirts-Column").show();
+    // } else if (savedText === "T-Shirts") {
+    //   $("#KnitwearKnitwearT-Shirts-Tab").addClass("tabactive");
+    //   $("#KnitwearKnitwearT-Shirts-Column").show();
     } else if (savedText === "Pullovers") {
       $("#KnitwearPullovers-Tab").addClass("tabactive");
       $("#KnitwearPullovers-Column").show();
