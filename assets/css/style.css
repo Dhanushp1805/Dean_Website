@@ -404,11 +404,11 @@ button:focus {
 }
 
 .banner-img-two {
-    background-image: url("../img/home-one/bg-1.png");
+    background-image: url("../img/home-one/bg-2.png");
 }
 
 .banner-img-three {
-    background-image: url("../img/home-one/bg-1.png");
+    background-image: url("../img/home-one/bg-3.png");
 }
 
 .banner-area {
@@ -821,6 +821,27 @@ button:focus {
     transition: 0.5s all ease;
 }
 
+.serv-icon {
+    z-index: 1 !important;
+    top: 14% !important;
+    left: 0 !important;
+    opacity: unset !important;
+}
+
+.service-item .service-icon {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: 1px dotted #fa5f0b;
+    color: #fa5f0b;
+    font-size: 35px;
+    margin-bottom: 15px;
+    transition: 0.5s all ease;
+}
+
 .service-item h3 {
     font-weight: 600;
     font-size: 22px;
@@ -1091,7 +1112,7 @@ button:focus {
 /*-- Benefit --*/
 
 .benefit-area {
-    background-image: url("../img/home-one/benefit-bg.jpg");
+    background-image: url("../img/about/whychooseus_img.png");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -2272,7 +2293,7 @@ footer:before {
 }
 
 .book-area .book-img {
-    background-image: url("../img/home-two/book-main.jpg");
+    background-image: url("../img/about/about_cont.png");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -2985,8 +3006,20 @@ footer:before {
 
 /*-- Job --*/
 
+.job-area-one .job-img {
+    background-image: url("../img/services/sourcing/sourcing_1.png");
+}
+
 .job-area-three .job-img {
-    background-image: url("../img/about-job-main.jpg");
+    background-image: url("../img/services/Quality-manangement-service/qualityimg_2.png");
+}
+
+.job-area-five .job-img {
+    background-image: url("../img/services/Container-Stuffing/Container-Stuffing_1.png");
+}
+
+.job-area-seven .job-img {
+    background-image: url("../img/services/laboratory-testing/laboratory-testing_1.png");
 }
 
 /*-- End Job --*/
@@ -4511,7 +4544,7 @@ footer:before {
     background: rgba(0, 0, 0, 0.5);
     z-index: 1040;
     overflow: hidden !important;
-    /* Below the offcanvas */   
+    /* Below the offcanvas */
 }
 
 .offcanvas {
