@@ -13,11 +13,11 @@ max-width: 695px;
 .job-area .job-img img {
     display: block !important;
 }
-.job-area-three .job-img {
+/* .job-area-three .job-img {
     background-image: unset !important;
     display: flex;
     align-items: center;
-}
+} */
 .section-title h2 {
     font-weight: 600;
     font-size: 30px !important;
